@@ -56,3 +56,25 @@ Nest providers decorators for HTTP methods, such as:
     - @Options()
     - @Head()
     - @All() -> Defines an endpoint that handles all of them
+
+<b>Status Code</b>
+I can define an specific status code for an specific request, using the @HttpCode(code) decorator
+
+```js
+@Post()
+@HttpCode(204)
+create() {
+    return 'This action adds a new cat'
+}
+```
+
+<b>Headers</b>
+I can specify a custom response header, using the @Header() decorator
+
+```js
+@Post()
+@Header('Uepa', 'none')
+create() {
+    return 'This action adds a new cat'
+}
+```
