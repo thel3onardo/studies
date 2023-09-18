@@ -39,3 +39,8 @@ let name_two = "leonardo"
 
 Console.log(name === name_two) // false. They are not the same reference in memory
 ```
+
+> Conditionals are always expressions in ReScript, so:
+```rs
+let result = if a {"hello"} else {"bye"}
+```
