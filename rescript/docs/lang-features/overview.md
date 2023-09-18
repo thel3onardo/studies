@@ -12,7 +12,7 @@ Rescript only has let as keyword for declaring variables.
     name := "sofia"
     ``
 
-> Pure function: It is a function that receives an input and returns a fixed output. Also, they cause no side effects in the outside world
+> Pure function: It is a function that, given the same input, will always produce the same output and has no side effects.
 
 Strings in ReScript must use the "" (double quotes)
 
@@ -23,4 +23,19 @@ let name = ref("leonardo")
 name := name.contents ++ " oliveira"
 
 Console.log(name) // output: { contents: 'leonardo oliveira' }
+```
+
+#### A bit about comparisons
+
+== -> structural equal -> compares data structures deeply (use with caution). Ex:
+    ```
+    (1, 2) == (1, 2)
+    ```
+
+=== -> referential equal, compares shallowly. Ex:
+```
+let name = "leonardo"
+let name_two = "leonardo"
+
+Console.log(name === name_two) // false. They are not the same reference in memory
 ```
