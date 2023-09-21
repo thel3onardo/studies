@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	Examples "mastering-go/basic-dt/examples"
+	Topics "mastering-go/basic-dt/topics"
 )
 
 //ignore it
@@ -23,12 +23,14 @@ func main() {
 	// fmt.Println(reflect.TypeOf(value))
 
 	//implementing custom error message
-	val, err := Examples.ExecuteExample()
+	val, err := Topics.ExecuteExample()
 
 	if err != nil {
 		fmt.Println(err)
-		return
+	} else {
+		fmt.Println(val)
 	}
 	
-	fmt.Println(val)
+	Topics.ExecConstants()
+	Topics.ExecSlices()
 }
