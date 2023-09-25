@@ -50,7 +50,7 @@ t := make([]float64, 3) //creates an slice of float64 type and size 3
 
 ```
 
-> I can't use make to define an array with know values. For that scenario, I use the following syntax:
+> I can't use make to define an array with known values. For that scenario, I use the following syntax:
 
 ```go
 
