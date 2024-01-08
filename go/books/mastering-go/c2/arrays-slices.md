@@ -60,3 +60,13 @@ m := []float64{3.4, 4.5, 4.4}
 
 len() -> to check lenght of a Slice
 append() -> to add an element to the slice
+cap() -> check the capacity of the slice
+    The capacity represents how much I can expand an slice without needing to allocate more memory
+
+> Slices, just like arrays, can be multiple-dimensional (or two-dimensional) in Go
+
+<b>Byte slices</b>
+
+Go uses byte slices for performing file I/O operations
+
+> A single byte can store a single ASCII character

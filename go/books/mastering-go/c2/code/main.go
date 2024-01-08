@@ -33,4 +33,5 @@ func main() {
 	
 	Topics.ExecConstants()
 	Topics.ExecSlices()
+	Topics.ExecTwoDimensionalSlices()
 }

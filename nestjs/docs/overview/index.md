@@ -78,3 +78,20 @@ create() {
     return 'This action adds a new cat'
 }
 ```
+
+<b>Route parameters</b>
+I define route paramers inside the handler decorator. For instance: @Get('/user/:id')
+
+Now I can acess the ID parameter in the following way:
+```js
+@Get('/user/:id')
+getUser(@Param() params) : string {
+    return `This is the id: ${params.id}`
+}
+
+or
+@Get('/user/:id')
+getUser(@Param('id') id: string) : string {
+    return `This is the id: ${id}`
+}
+```
